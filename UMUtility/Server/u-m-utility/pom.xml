@@ -73,15 +73,11 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>3.9.1</version>
-            </plugin>
-			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
 				<version>3.1.1</version>
 			</plugin>
+
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -104,6 +100,34 @@
 					</execution>
 				</executions>
 			</plugin>
+
+			<!-- <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>3.1.2</version>
+				<configuration>
+					<checkStyleRules>
+						<module name="Checker">
+							<module name="FileTabCharacter">
+								<property name="eachLine" value="true" />
+							</module>
+							<module name="TreeWalker">
+								<module name="EmptyBlock" />
+							</module>
+						</module>
+					</checkStyleRules>
+				</configuration>
+				<executions>
+					<execution>
+						<id>validate</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin> -->
+
 		</plugins>
 	</build>
 
@@ -125,11 +149,6 @@
 						</module>
 					</checkStyleRules>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>com.github.spotbugs</groupId>
-				<artifactId>spotbugs-maven-plugin</artifactId>
-				<version>4.2.2</version>
 			</plugin>
 		</plugins>
 	</reporting>
