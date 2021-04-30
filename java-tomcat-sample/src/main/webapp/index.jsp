@@ -4,6 +4,6 @@
 <h3 style="color:green">Done with feature A</h3>
 <h3 style="color:cyan">Done with feature B</h3>
 <h3 style="color: blue">Feature IaC</h3>
-<h3 style="color: orange">Fixed Issue TST-007</h3>
+<h3 style="color: magenta">Fixed Issue TST-007</h3>
 </body>
 </html>
